@@ -1,0 +1,8 @@
+<launch>
+    <node name="run_serial" pkg="dbw_erp42" type="run_serial.sh" output="screen">
+    </node>
+    <node name="dbw_erp42_node" pkg="dbw_erp42" type="dbw_erp42_node.py" output="screen">
+    </node>
+    <node name="dbw_cmd_erp42" pkg="dbw_erp42" type="dbw_cmd_erp42.py" output="screen">
+    </node>
+</launch>
