@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' upload='false' generator='JOSM'>
+  <node id='-649495' lat='35.67230617771' lon='128.44724683554' />
+  <node id='-649496' lat='35.67218213342' lon='128.44728458562' />
+  <node id='-649497' lat='35.67256997951' lon='128.44737655704' />
+  <node id='-649498' lat='35.672415363' lon='128.44742316246' />
+  <node id='-649499' lat='35.701119992' lon='128.46747471513' />
+  <node id='-649500' lat='35.70115562546' lon='128.46754834986' />
+  <node id='-649501' lat='35.70040721324' lon='128.46818452904' />
+  <node id='-649502' lat='35.70037247164' lon='128.46811226716' />
+  <way id='-142509'>
+    <nd ref='-649495' />
+    <nd ref='-649496' />
+    <tag k='AdminCode' v='157' />
+    <tag k='HistType' v='C5001' />
+    <tag k='ID' v='C519AR068004' />
+    <tag k='LinkID' v='A219AR070740' />
+    <tag k='Maker' v='»õÇÑÇ×¾÷ÄÁ¼Ò½Ã¾ö' />
+    <tag k='Ref_Lane' v='2' />
+    <tag k='Type' v='1' />
+    <tag k='UpdateDate' v='20191103' />
+    <tag k='Version' v='2019' />
+  </way>
+  <way id='-142511'>
+    <nd ref='-649497' />
+    <nd ref='-649498' />
+    <tag k='AdminCode' v='157' />
+    <tag k='HistType' v='C5001' />
+    <tag k='ID' v='C519AR068003' />
+    <tag k='LinkID' v='A219AR069747' />
+    <tag k='Maker' v='»õÇÑÇ×¾÷ÄÁ¼Ò½Ã¾ö' />
+    <tag k='Ref_Lane' v='2' />
+    <tag k='Type' v='1' />
+    <tag k='UpdateDate' v='20191103' />
+    <tag k='Version' v='2019' />
+  </way>
+  <way id='-142513'>
+    <nd ref='-649499' />
+    <nd ref='-649500' />
+    <tag k='AdminCode' v='157' />
+    <tag k='HistType' v='C5001' />
+    <tag k='ID' v='C519AR068002' />
+    <tag k='LinkID' v='A219AR070058' />
+    <tag k='Maker' v='»õÇÑÇ×¾÷ÄÁ¼Ò½Ã¾ö' />
+    <tag k='Ref_Lane' v='2' />
+    <tag k='Type' v='1' />
+    <tag k='UpdateDate' v='20191103' />
+    <tag k='Version' v='2019' />
+  </way>
+  <way id='-142515'>
+    <nd ref='-649501' />
+    <nd ref='-649502' />
+    <tag k='AdminCode' v='157' />
+    <tag k='HistType' v='C5001' />
+    <tag k='ID' v='C519AR068001' />
+    <tag k='LinkID' v='A219AR068209' />
+    <tag k='Maker' v='»õÇÑÇ×¾÷ÄÁ¼Ò½Ã¾ö' />
+    <tag k='Ref_Lane' v='2' />
+    <tag k='Type' v='1' />
+    <tag k='UpdateDate' v='20191103' />
+    <tag k='Version' v='2019' />
+  </way>
+</osm>
