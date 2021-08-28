@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>align_nms</name>
+  <version>0.0.0</version>
+  <description>camera lidar alignment and non_maximum_suppression</description>
+
+  <maintainer email="jinny3559@dgist.ac.kr">Hyunjin Bae</maintainer>
+
+  <license>DGIST</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>pcl_conversions</depend>
+  <depend>pcl_ros</depend>
+  <depend>libpcl-all-dev</depend>
+
+</package>
