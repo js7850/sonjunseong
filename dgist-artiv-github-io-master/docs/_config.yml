@@ -1,0 +1,64 @@
+#theme: jekyll-theme-dinky
+remote_theme : thiagorossener/jekflix-template
+
+# Site settings
+name: ARTIV | DGIST Lab.
+title:          DGIST ARTIV Tech Blog
+description:    "DGIST ARTIV 자율주행 기술 블로그, ARTIV IV Lab"
+url:            "https://dgist-artiv.github.io"
+
+show_hero: true
+menu:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+  - title: Members
+    url: /staff
+  - title: Teams
+    url: /category
+  - title: Self Driving SW(Beta)
+    url: /asd
+  - title: Publication
+    url: /publication
+  - title: News
+    url: /news
+
+categories_folder: category
+
+language: "kr"
+paginate: 12
+two_columns_layout: true
+
+google_analytics: "UA-107264403-4"
+markdown: kramdown
+highlighter: rouge
+collections:
+  authors:
+    output: true
+use_logo: false
+# Content paginator
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
+
+
+github_username: dgist-artiv
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-paginate-content
