@@ -1,0 +1,19 @@
+<launch>
+  <arg name ='alpha' default="2" />
+  <arg name ='beta' default='0'/>
+  <arg name ='gamma' default='0.02'/>
+  <arg name ='yaw_velocity_topic' default = "/imu/data_raw"/>
+  <arg name ='yaw_topic' default = "/imu/yaw"/>
+  <arg name ='imu_type' default='0'/>
+  <node pkg="artiv_hwtimu_driver" type="hwtimu" name="hwtimu_node" output="screen" respawn="true">
+    <rosparam file="$(find artiv_hwtimu_driver)/cfg/hwtcfg.yaml" command="load" />
+    <param name="com_file" value="$(find artiv_hwtimu_driver)/cfg/com.cfg"/>
+  </node>
+  <include file = "$(find additional_imu_driver)/launch/imu_driver.launch">
+  	<arg name ='alpha' default = '$(arg alpha)'/>
+  	<arg name ='beta'  default = '$(arg beta)'/>
+  	<arg name ='gamma' default = '$(arg gamma)'/>
+	<arg name ='imu_type' default = '$(arg imu_type)'/>
+	<arg name ='yaw_velocity_topic' default = '$(arg yaw_velocity_topic)'/>
+  </include>
+</launch>

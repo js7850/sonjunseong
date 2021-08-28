@@ -1,0 +1,25 @@
+<!-- version 1.0.0-->
+<launch>
+  <arg name ='alpha' default = "1" />
+  <arg name ='beta' default = "0" />
+  <arg name ='gamma' default = "0.1"/>
+  <arg name ='yaw_velocity_topic' default = "/imu"/>
+  <arg name ='yaw_topic' default = "/imu/yaw"/>
+  <arg name ='out_topic' default = "/yaw"/>
+  <arg name ='imu_type' default = '1'/>
+  <arg name ='threshold' default = '0.1'/>
+  <arg name ='cali_time' default = '5'/>
+
+
+  <node pkg="additional_imu_driver" type = "imu_driver" name="imu_driver" output = "screen">
+    <param name = 'alpha'  value='$(arg alpha)'/>
+    <param name = 'beta'  value='$(arg beta)'/>
+    <param name = 'gamma' value='$(arg gamma)'/>
+    <param name = 'yaw_velocity_topic' value='$(arg yaw_velocity_topic)'/>
+    <param name = 'yaw_topic' value = '$(arg yaw_topic)'/>
+    <param name = 'out_topic' value = '$(arg out_topic)'/>
+    <param name = 'imu_type' value = '$(arg imu_type)'/>
+    <param name = 'threshold' value = '$(arg threshold)'/>
+    <param name = 'cali_time' value = '$(arg cali_time)'/>
+  </node>
+</launch>

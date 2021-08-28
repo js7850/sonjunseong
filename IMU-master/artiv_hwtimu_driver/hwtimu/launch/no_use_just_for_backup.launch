@@ -1,0 +1,9 @@
+<launch>
+	<node pkg="artiv_hwtimu_driver" type="hwtimu" name="hwtimu_node" output="screen">
+    <rosparam file="$(find artiv_hwtimu_driver)/cfg/hwtcfg.yaml" command="load" />
+    <param name="com_file" value="$(find artiv_hwtimu_driver)/cfg/com.cfg"/>
+  </node>
+  	<node pkg="artiv_hwtimu_driver" type="hwtimuSubExample" name="hwtimuSubExample" output="screen">
+    <rosparam file="$(find artiv_hwtimu_driver)/cfg/hwtsubcfg.yaml" command="load" />
+  </node>
+</launch>
